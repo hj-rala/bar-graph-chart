@@ -1,16 +1,42 @@
 //stick graph
-		var barCt = function(){
-			$('.bar-chart').cssCharts({type:"bar"});
-		}; barCt();
+var barCt = function(){
+	$('.bar-chart').cssCharts({type:"bar"});
+}; barCt();
 
-		$(window).resize(function(){
-			var winW = $(window).width();
+$(window).resize(function(){
+	var winW = $(window).width();
 
-			if (winW > 784) {
-				$(".chart.bar").css('width','616px');
-			} else if (winW > 640 && winW < 783) {
-				$(".chart.bar").css('width','485px');
-			} else {
-				$(".chart.bar").css('width','485px');
-			}
-		});
+	if (winW > 784) {
+		$(".chart.bar").css('width','616px');
+	} else if (winW > 640 && winW < 783) {
+		$(".chart.bar").css('width','485px');
+	} else {
+		$(".chart.bar").css('width','485px');
+	}
+});
+
+							    
+							    
+							    
+							    
+
+<div class="chartOver">
+	<div class="chart">
+		<ul class="bar-chart" data-bars="[11.5,15],[12,9],[11.5,15],[8,9],[8,7],[10.5,6],[8,7],[8,7],[12,15],[14.5,11],[8,7]" data-max="15" data-unit=" " data-width="8" data-height="240"></ul>
+	</div>
+	<div class="chartList">
+		<ul>
+			<li>판단력</li>
+			<li>응용력</li>
+			<li>지혜력</li>
+			<li>순발력</li>
+			<li>이해력</li>
+			<li>기억력</li>
+			<li>사고력</li>
+			<li>주의력</li>
+			<li>수리력</li>
+			<li>인지력</li>
+			<li>관찰력</li>
+		</ul>
+	</div>
+</div>
